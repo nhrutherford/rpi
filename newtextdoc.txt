@@ -91,6 +91,9 @@ user setup:
 filetype|user|group|others
 d rwx r-- r--
 
+diskusage pg 82
+df -T
+du -h
 
 p77
 chmod 777  filename
@@ -114,7 +117,7 @@ softlink (shortcut) ln -s
 -----
 github
 nhrutherford@gmail
-65e
+12
 rpi repository
 git status
 git add filename
@@ -138,3 +141,13 @@ git merge newbranch (checkout master first?)
 
 git branch -d newbranch to delete (AFTER MERGE)
 commen git commands page 108  p108
+
+----
+vmsoltuion VirtualBox
+
+download all code for the book
+sudo app intsall git
+git clone https://github.com/derekmolloy.exploringRPI.git
+
+
+
