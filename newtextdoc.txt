@@ -111,4 +111,14 @@ link
 ln directory + filename + MyLink
 
 softlink (shortcut) ln -s
+-----
+github
+nhrutherford@gmail
+65e
+rpi repository
+git status
+git add filename
+git add . to add all
+git rm to remove file
+
 
