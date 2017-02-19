@@ -130,3 +130,11 @@ git commit -m "my initial commit"
 git commit -a -m "comment" -- comits tracked files, does not add new ones
 
 git push
+
+git branch newbranch
+git checkout newbranch
+git checkout master
+git merge newbranch (checkout master first?)
+
+git branch -d newbranch to delete (AFTER MERGE)
+commen git commands page 108  p108
