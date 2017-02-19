@@ -121,4 +121,12 @@ git add filename
 git add . to add all
 git rm to remove file
 
+git config --global to configure uname and email
 
+to commit to local repo
+
+git commit -m "my initial commit"
+
+git commit -a -m "comment" -- comits tracked files, does not add new ones
+
+git push
