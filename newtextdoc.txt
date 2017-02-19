@@ -1,0 +1,114 @@
+listing files
+-l = list
+-ail = list with index (not sure what a is)
+
+testing 456
+testing 456
+pi@raspberrypi:~/Desktop $ echo "testing 456" >>newtextdoc.txt
+
+
+pi@raspberrypi:~/Desktop $ echo "testing 456" >>newtextdoc.txt
+
+
+
+sudo raspi-config
+
+pi@raspberrypi:/sys/class/leds/input0::capslock 
+$sudo sh -c "echo kbd-capslock  > trigger"
+
+pi@raspberrypi:/sys/class/leds/input0::capslock 
+$sudo sh -c "echo heartbeat  > trigger"
+
+
+sftp hayes@192.168.1.9
+
+move file
+
+pwd
+lpwd
+
+cd Desktop/
+
+put newtextdoc.txt
+
+sftp hayes@192.168.1.9 -pw hayes -b CopyNotes.scr
+
+apt-cache search sshpass
+sudo apt-install sshpass
+
+sshpass -p hayes12 sftp hayes@192.168.1.9
+
+must allow execute before you can run
+pi@raspberrypi:~/Desktop $ chmod +x copynotes.scr
+
+
+sudo dpkg-reconfigure tzdata
+
+
+export SSHPASS=hayes12
+sshpass -e sftp hayes@192.168.1.9 << !
+cd /home/hayes/Desktop   
+lcd /home/pi/Desktop
+put newtextdoc.txt
+bye
+!
+
+systemctl -list all running services
+systemctl start
+systemctl stop
+systemctl status
+systemctl disable
+systemctl enable
+
+bootup to multi.user and do not load graphical
+sudo systemctl isolate multi-user.target
+systemctl list-units --type=target |grep graphical
+sudo systemctl isolate graphical.target -turn it back on (SSH)
+
+change default run level
+sudo systemctl set-default multi-user.target
+systemctl get-default - check default
+
+return to graphical:
+sudo systemctl isolate graphical.target
+sudo systemctl set-default graphical.target
+
+----
+user admin
+su = substitue user
+
+su - will access root user
+password required
+whoami
+exit to go back to pi
+
+disable root
+sudo passwd -l root
+
+user setup:
+/etc/sudoers.d $  this is a directive where user access is stored
+
+filetype|user|group|others
+d rwx r-- r--
+
+
+p77
+chmod 777  filename
+chown 
+chgrp
+
+-----
+ps list running processes
+
+ps ax list all
+
+can use grep
+
+kill to kill
+---
+link
+
+ln directory + filename + MyLink
+
+softlink (shortcut) ln -s
+
